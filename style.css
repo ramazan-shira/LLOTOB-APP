@@ -1,0 +1,836 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.navbar-icon {
+  margin-top: 15px;
+  margin-left: 30px;
+  font-family: "Krona One", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+  color: #000;
+}
+
+.navtabs {
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.tab {
+  margin-top: 30px;
+  margin-right: 30px;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.tab:hover {
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+}
+
+.top,
+.bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 80px;
+  margin: 0 30px;
+}
+
+.bottom {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 80px;
+  margin: 0 30px 10px 30px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-container-title {
+  margin-left: 48px;
+  margin-top: 80px;
+  text-transform: uppercase;
+  font-size: 57px;
+  font-weight: 400;
+  font-family: "Krona One", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-container-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container-image img {
+  height: 230px;
+}
+
+.hero-container-content {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Roboto Flex", sans-serif;
+  color: #fff;
+  margin-left: 85px;
+}
+
+.sign-up {
+  display: none;
+}
+
+.sign-up a {
+  display: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Krona One", sans-serif;
+  color: white;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: none;
+}
+
+.sign-up button:hover {
+  cursor: pointer;
+}
+
+.create-account {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-account-title {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Krona One", sans-serif;
+  color: #eb0606;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+  margin-top: 50px;
+}
+
+.form-input {
+  width: 370px;
+  height: 52px;
+  border-radius: 0 30px 30px 30px;
+  background-color: #eb0606;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: "Roboto Flex", sans-serif;
+  color: #fff;
+}
+
+.form-input::placeholder {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: "Roboto Flex", sans-serif;
+  color: #fff;
+}
+
+.terms {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+
+input[type="radio"] {
+  width: 40px;
+  height: 40px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  color: #fff;
+}
+
+input[type="radio"]:hover {
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background-color: white;
+  border-color: black;
+}
+
+label {
+  font-size: 24px;
+  font-weight: 800;
+  font-family: "Roboto Flex", sans-serif;
+  color: #fff;
+}
+
+.register-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#register {
+  width: 300px;
+  height: 70px;
+  background-color: #fff;
+  color: #000;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Roboto Flex", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 40px;
+  margin-top: 60px;
+}
+
+#register:hover {
+  cursor: pointer;
+  background-color: #e7ecef;
+  color: #274c77;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  margin: 0 30px;
+}
+
+.info {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.qrcode img {
+  width: 58px;
+  height: 62px;
+}
+
+.business-info,
+.support {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.business-info p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Roboto Flex", sans-serif;
+  text-transform: uppercase;
+}
+
+.support {
+  margin-left: 70px;
+}
+
+.faqs,
+.customer-support {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.bullet {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.faqs a,
+.customer-support a {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Roboto Flex", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
+}
+
+.social-media img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-media img:hover {
+  cursor: pointer;
+}
+
+.rated {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.rate {
+  display: flex;
+  gap: 10px;
+}
+
+.rated-title {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Roboto Flex", sans-serif;
+  color: #fff;
+}
+
+.rated-stars {
+  display: flex;
+  gap: 5px;
+}
+
+.rated-stars img {
+  width: 20px;
+  height: 20px;
+}
+
+.rated-stars img:hover {
+  cursor: pointer;
+}
+
+.download {
+  display: flex;
+  gap: 20px;
+}
+
+#app-store {
+  width: 150px;
+  height: 42px;
+}
+
+#google-play {
+  width: 145px;
+  height: 43px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.copyright-symbol {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright-content {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto Flex", sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1440px) {
+  .main-content {
+    gap: 50px;
+  }
+
+  .hero-container-title {
+    font-size: 48px;
+  }
+
+  .hero-container-content {
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  .create-account-title {
+    font-size: 26px;
+  }
+
+  .rated {
+    margin-left: 20px;
+  }
+
+  .copyright-content {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  body {
+    background-repeat: repeat;
+  }
+
+  .hero-container-title {
+    font-size: 48px;
+  }
+
+  .hero-container-content {
+    font-size: 22px;
+    margin-left: 85px;
+  }
+
+  .create-account {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .create-account-title {
+    font-size: 24px;
+  }
+
+  form {
+    gap: 20px;
+  }
+
+  .form-input {
+    width: 300px;
+    height: 50px;
+  }
+
+  .bottom {
+    margin-bottom: 20px;
+  }
+
+  .copyright {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .copyright-content {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .top {
+    gap: 50px;
+  }
+
+  .hero-container-title {
+    font-size: 42px;
+  }
+
+  .hero-container-content {
+    font-size: 20px;
+  }
+
+  .create-account-title {
+    font-size: 22px;
+  }
+
+  .terms label {
+    font-size: 20px;
+  }
+
+  input[type="radio"] {
+    width: 30px;
+    height: 30px;
+  }
+
+  #register {
+    width: 250px;
+    height: 55px;
+    margin-top: 45px;
+  }
+
+  .bottom {
+    padding-right: 50px;
+  }
+  .rated-title,
+  .business-info p,
+  .faqs a,
+  .customer-support a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .navtabs {
+    display: none;
+  }
+
+  .navbar-icon {
+    order: 2;
+    margin-right: 40px;
+    color: white;
+  }
+
+  .menu-icon {
+    order: 1;
+    display: block;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+
+  .menu-icon:hover {
+    cursor: pointer;
+  }
+
+  .menu-icon img {
+    width: 40px;
+  }
+
+  .top {
+    grid-template-columns: 1.5fr 1fr;
+    margin-left: 0;
+    gap: 30px;
+  }
+
+  .hero-container-title {
+    font-size: 32px;
+    margin-left: 20px;
+  }
+
+  .hero-container-content {
+    margin-left: 40px;
+  }
+
+  .form-input {
+    width: 250px;
+    height: 40px;
+  }
+
+  .rated-title,
+  .business-info p,
+  .faqs a,
+  .customer-support a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+  }
+
+  .hero-container-title {
+    margin-top: 50px;
+    margin-left: 0;
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .hero-container-image {
+    margin: 15px 0;
+  }
+
+  .hero-container-content {
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  .sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .create-account {
+    margin-bottom: 30px;
+  }
+
+  .create-account-title {
+    font-size: 32px;
+    color: white;
+  }
+
+  form {
+    margin-top: 30px;
+  }
+
+  .form-input {
+    width: 300px;
+    height: 50px;
+  }
+
+  .terms label {
+    font-size: 22px;
+  }
+
+  #register {
+    height: 60px;
+  }
+
+  .bottom {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .navbar-icon {
+    font-size: 22px;
+  }
+
+  .hero-container-title {
+    font-size: 36px;
+  }
+
+  .hero-container-content {
+    font-size: 22px;
+    margin: 0;
+  }
+
+  .create-account-title {
+    font-size: 26px;
+    color: #fff;
+  }
+
+  .form-input {
+    width: 280px;
+    height: 50px;
+  }
+
+  #terms,
+  #register {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .top {
+    width: 430px;
+  }
+
+  .hero-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-container-content {
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    width: 430px;
+  }
+
+  .create-account {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  form {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .hero-container-title {
+    font-size: 32px;
+  }
+
+  .hero-container-content {
+    font-size: 18px;
+  }
+
+  .create-account-title {
+    font-size: 24px;
+  }
+
+  .form-input {
+    width: 285px;
+    height: 52px;
+  }
+
+  .terms label {
+    font-size: 18px;
+  }
+
+  #register {
+    width: 270px;
+    height: 60px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .hero-container-title {
+    font-size: 28px;
+  }
+
+  .top {
+    width: 350px;
+  }
+
+  .hero-container-content {
+    width: 350px;
+  }
+
+  .create-account-title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .main-content {
+    overflow-x: hidden;
+  }
+
+  .top {
+    width: 300px;
+  }
+
+  .hero-container-content {
+    width: 300px;
+  }
+
+  .hero-container-title {
+    font-size: 26px;
+  }
+
+  .hero-container-content {
+    font-size: 18px;
+  }
+
+  .hero-container-image {
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  form {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .form-input {
+    width: 250px;
+    height: 40px;
+  }
+
+  .bottom {
+    display: none;
+  }
+
+  .create-account {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .create-account-data {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #terms {
+    width: 20px;
+    height: 20px;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  #register {
+    width: 200px;
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .hero-container-title {
+    font-size: 24px;
+  }
+
+  .hero-container-content {
+    font-size: 16px;
+  }
+
+  .create-account-title {
+    font-size: 20px;
+  }
+
+  #terms {
+    width: 20px;
+    height: 20px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+}

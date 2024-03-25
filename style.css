@@ -4,9 +4,7 @@
 }
 
 body {
-  background-image: url(background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #d9d6ce;
 }
 
 .navbar {
@@ -23,7 +21,7 @@ body {
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 400;
-  color: #000;
+  color: #fc0303;
 }
 
 .navtabs {
@@ -40,7 +38,12 @@ body {
   font-size: 24px;
   font-weight: 500;
   text-transform: uppercase;
-  color: #fff;
+  color: #fc0a0a;
+}
+
+.tab img {
+  width: 60px;
+  height: 60px;
 }
 
 .tab:hover {
@@ -69,6 +72,7 @@ body {
 
 .bottom {
   width: 100%;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 80px;
@@ -108,6 +112,12 @@ body {
   font-family: "Roboto Flex", sans-serif;
   color: #fff;
   margin-left: 85px;
+}
+
+span {
+  font-size: 30px;
+  color: red;
+  font-weight: 800;
 }
 
 .sign-up {
@@ -454,7 +464,7 @@ label {
   }
 
   .bottom {
-    margin-bottom: 20px;
+    margin: 0 30px 10px 30px;
   }
 
   .copyright {
@@ -504,8 +514,14 @@ label {
   }
 
   .bottom {
+    margin-left: 30px;
     padding-right: 50px;
   }
+
+  .contact {
+    margin-left: 30px;
+  }
+
   .rated-title,
   .business-info p,
   .faqs a,
@@ -662,10 +678,6 @@ label {
 }
 
 @media screen and (max-width: 650px) {
-  .top {
-    width: 430px;
-  }
-
   .hero-container {
     justify-content: center;
     align-items: center;
@@ -673,11 +685,8 @@ label {
 
   .hero-container-content {
     margin: 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     font-size: 20px;
-    width: 430px;
+    /* width: 430px; */
   }
 
   .create-account {
@@ -731,9 +740,9 @@ label {
     font-size: 28px;
   }
 
-  .top {
+  /* .top {
     width: 350px;
-  }
+  } */
 
   .hero-container-content {
     width: 350px;
@@ -749,9 +758,9 @@ label {
     overflow-x: hidden;
   }
 
-  .top {
+  /* .top {
     width: 300px;
-  }
+  } */
 
   .hero-container-content {
     width: 300px;
